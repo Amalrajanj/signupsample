@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  max-width: 500px;
+  height: 100vh;
+  margin: 0 auto;
+  padding-top: 2rem;
+  background: url("./background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.intro {
+  margin: 0.5 auto 3rem auto;
+  p {
+    margin: 1rem auto;
+    opacity: 0.5;
+  }
+}
+
+.input_content {
+  width: 100%;
+  .info_title {
+    color: #5e20e7;
+    margin: 1rem auto;
+  }
+
+  .input_box {
+    width: 100%;
+    p {
+      opacity: 0.7;
+    }
+    input {
+      width: 90%;
+      padding: 1.2rem 0.5rem;
+      margin: 1rem 0.5rem;
+      border: none;
+      outline: none;
+      border-radius: 8px;
+      font-weight: 900;
+      font-size: 1rem;
+      text-align: center;
+      letter-spacing: 1px;
+      box-shadow: inset 2px 2px 2px #d8d5de, inset -3px -3px 6px #ffffff;
+    }
+    button {
+      width: 90%;
+      outline: none;
+      border: none;
+      padding: 1.2rem 0.5rem;
+      margin: 2rem 0.5rem;
+      background: #0029ff;
+      border-radius: 8px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      font-size: 1.2rem;
+      color: white;
+      box-shadow: 4px 4px 4px #c9b2fa, -3px -3px 3px #ffffff;
+    }
+  }
+
+  .input_box {
+    margin: 2rem auto;
+  }
+}
+
+@media (min-width: 450px) {
+  input,
+  button {
+    width: 85% !important;
+  }
+}
+
+@media (min-width: 500px) {
+  .container {
+    height: 90vh;
+    border-radius: 8px;
+  }
+}
